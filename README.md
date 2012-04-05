@@ -28,22 +28,28 @@ Usage
 ================
 For use with a single frame, simply call buster.wait and pass the unique ID of the frame where you want to prevent busting:
 
+```html
 <iframe src="http://vimeo.com/39408892" id="thisFrame" frameborder="0" style="width: 800px; height: 500px;"></iframe>
 <script>
 	$(function(){
 		buster.wait("#thisFrame");
 	});
 </script>
+```
 
 For use with any frame on the page, call buster.wait("iframe"), which will watch every iframe on the page. Please note the performance and reliability of this may be finicky:
 
+```html
 <script>
 	$(function(){
 		buster.wait("iframe");
 	});
 </script>
+```
 
 Finally, if you want to integrate busterjs into your own app, you can simply call buster.on and buster.off as you see fit:
 
+```javascript
 buster.on();
 buster.off();
+```
