@@ -6,7 +6,12 @@
 	</head>
 	<body>
 		<h1>buster</h2>
-			<p>BusterJs is a "frame buster buster" script which allows you to display pages in a frame that have "frame busters," a type of script that prevents pages from being displayed in frames. This script should not be used to misrepresent the owner of the framed page.</p>
-		<iframe src="http://vimeo.com/39408892" frameborder="0" style="width: 800px; height: 500px;"></iframe>
+		<p>BusterJs is a "frame buster buster" script which allows you to display pages in a frame that have "frame busters," a type of script that prevents pages from being displayed in frames. This script should not be used to misrepresent the owner of the framed page.</p>
+		<iframe src="http://vimeo.com/39408892" id="thisFrame" frameborder="0" style="width: 800px; height: 500px;"></iframe>
+		<script>
+			$(function(){
+				buster.wait("#thisFrame");
+			});
+		</script>
 	</body>
 </html>

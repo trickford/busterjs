@@ -1,7 +1,6 @@
-// buster.js version 0.1
+// buster.js version 0.2
 // Author: Rick Ford
 // Website: http://www.spoontwisted.com
-// Usage: ...
 
 (function ($) {
 
@@ -9,14 +8,14 @@
 
 		init: function () {
 			buster.on();
-			buster.watch("iframe");
 		},
 
 		// default events
 		events: function () {
 		},
 
-		watch: function(id){
+		wait: function(id){
+			buster.on();
 			$(id).bind("load",function(){
 				buster.off();
 			});
@@ -35,8 +34,5 @@
 		}
 
 	};
-	$(function(){
-		buster.init();
-	});
 
 })(jQuery);
