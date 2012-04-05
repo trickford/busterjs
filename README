@@ -2,6 +2,8 @@ busterjs readme
 ================
 busterjs is a "frame buster buster" script which allows you to display pages in a frame that have "frame busters," a type of script that prevents pages from being displayed in frames. This script should not be used to misrepresent the owner of the framed page.
 
+busterjs requires jQuery - I've tested it on 1.6.3+
+
 Usage
 ================
 For use with a single frame, simply call buster.wait and pass the unique ID of the frame where you want to prevent busting:
