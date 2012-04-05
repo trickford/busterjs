@@ -1,6 +1,6 @@
 // buster.js version 0.2
 // Author: Rick Ford
-// Website: http://www.spoontwisted.com/buster-js-released/
+// Website: http://www.spoontwisted.com/projects/buster-js/
 
 (function ($) {
 
